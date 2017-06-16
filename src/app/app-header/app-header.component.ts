@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./app-header.component.css']
 })
 export class AppHeaderComponent {
-
-  constructor() { }
+    headerTitle:String = 'SVK Dashboard Application';
+    constructor() { }
   
 }
