@@ -12,12 +12,14 @@ nav a {
   border-radius: 4px;
 }
 nav a:visited, a:link {
-  color: blueviolet;
+  color: pink;
 }
 nav a:hover {
-  color: blue;
-  background-color: #CFD8DC;
+   color: black;
+  background-color: skyblue;
+  cursor: pointer;
 }
 nav a.active {
-  color: blue;
+  color: black;
+  background-color: #CFD8DC;
 }
