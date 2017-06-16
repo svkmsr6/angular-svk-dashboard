@@ -1,4 +1,23 @@
 .centric{
     text-align: center;
-    color: skyblue;
+    color: cyan;
+    background-color: black;
+}
+
+nav a {
+  padding: 5px 10px;
+  text-decoration: none;
+  margin-top: 10px;
+  display: inline-block;  
+  border-radius: 4px;
+}
+nav a:visited, a:link {
+  color: blueviolet;
+}
+nav a:hover {
+  color: blue;
+  background-color: #CFD8DC;
+}
+nav a.active {
+  color: blue;
 }
