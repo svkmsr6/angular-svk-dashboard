@@ -16,10 +16,10 @@ nav a:visited, a:link {
 }
 nav a:hover {
    color: black;
-  background-color: skyblue;
+  background-color: cyan;
   cursor: pointer;
 }
 nav a.active {
   color: black;
-  background-color: #CFD8DC;
+   background-color: cyan;
 }
