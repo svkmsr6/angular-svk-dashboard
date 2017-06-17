@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-stock-search',
@@ -7,6 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StockSearchComponent {
 
-  constructor() { }
+  constructor(private router:Router) { };
+
+  navigateToDetails():void{
+      let link = ['/goToDetails'];
+      this.router.navigate(link);
+  }
  
 }
