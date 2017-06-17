@@ -1,7 +1,7 @@
 .centric{
     text-align: center;
-    color: cyan;
-    background-color: black;
+    color: whitesmoke;
+    background-color: #33383b;
 }
 
 nav a {
@@ -15,11 +15,11 @@ nav a:visited, a:link {
   color: pink;
 }
 nav a:hover {
-   color: black;
-  background-color: cyan;
+   color: #33383b;
+  background-color: whitesmoke;
   cursor: pointer;
 }
 nav a.active {
-  color: black;
-   background-color: cyan;
+  color: #33383b;
+   background-color: whitesmoke;
 }
