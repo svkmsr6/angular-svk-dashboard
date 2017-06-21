@@ -10,6 +10,7 @@ import { FooterComponent } from './footer/footer.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { StockSearchComponent } from './stock-search/stock-search.component';
 import { StockDetailsComponent } from './stock-details/stock-details.component';
+import { DashboardApiService} from './services/dashboard-api.service';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,7 @@ import { StockDetailsComponent } from './stock-details/stock-details.component';
     HttpModule,
     AppRouterModule    
   ],
-  providers: [],
+  providers: [DashboardApiService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
