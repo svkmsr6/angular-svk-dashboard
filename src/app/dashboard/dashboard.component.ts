@@ -16,7 +16,7 @@ export class DashboardComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.dashboardApiService.getPosts()
+    this.dashboardApiService.getUsers()
       .subscribe(data => {
         this.listOfTopUsers = Array.from(data);
         console.log(this.listOfTopUsers)

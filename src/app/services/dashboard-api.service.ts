@@ -10,7 +10,7 @@ export class DashboardApiService {
 
   constructor(private http:Http) {}
 
-   public getPosts():Observable <any>{
+   public getUsers():Observable <any>{
           return this.http.get('https://jsonplaceholder.typicode.com/users')
                             .map((res:any)=>res.json())
                             .catch((error:any)=> {return error.message});
