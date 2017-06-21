@@ -1,20 +1,18 @@
+<div class="container">
  <table class="table table-condensed table-hover">
     <thead>
       <tr>
         <th>ID</th>
-        <th>Username</th>
-        <th>Name</th>
-        <th>Email</th>
-        <th>Company</th>
+        <th>Company</th>       
+        <th>CompanyEmail</th>        
       </tr>
     </thead>
     <tbody>
       <tr *ngFor = "let user of listOfTopUsers" >
         <td>{{user?.id}}</td>
-        <td>{{user?.username}}</td>
-        <td>{{user?.name}}</td>
-        <td>{{user?.email}}</td>
-        <td>{{user?.company.name}}</td>
+        <td>{{user?.company.name}}</td>        
+        <td>{{user?.email}}</td>        
       </tr>      
     </tbody>
   </table>
+</div>
