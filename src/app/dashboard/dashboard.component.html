@@ -4,14 +4,16 @@
     <thead>
       <tr>
         <th>ID</th>
-        <th>Company</th>       
-        <th>CompanyEmail</th>        
+        <th>Company</th>
+        <th>Firm ID</th>       
+        <th>Company Email</th>        
       </tr>
     </thead>
     <tbody>
       <tr *ngFor = "let user of listOfTopUsers" >
         <td>{{user?.id}}</td>
-        <td>{{user?.company.name}}</td>        
+        <td>{{user?.company.name}}</td> 
+        <td>{{user?.username}}</td>       
         <td>{{user?.email}}</td>        
       </tr>      
     </tbody>

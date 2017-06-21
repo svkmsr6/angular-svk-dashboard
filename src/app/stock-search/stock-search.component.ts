@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./stock-search.component.css']
 })
 export class StockSearchComponent {
-  placeholder:String = "Search by Firm Name";
+  placeholder:String = "Search by Firm ID";
   constructor(private router:Router) { };
 
   navigateToDetails():void{
