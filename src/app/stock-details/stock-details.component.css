@@ -40,7 +40,7 @@ body {
 .card:after {
   content: '';
   display: block;
-  width: 190px;
+  width: 100px;
   height: 300px;
   background: cadetblue;
   position: absolute;
@@ -127,6 +127,11 @@ body {
 
 .centric-detail{
     text-align: center;    
+    padding-left: 31%;
+}
+
+.centric-badge{
+    margin-left: 31%;
 }
 
 .caption{
