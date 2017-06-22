@@ -8,11 +8,17 @@ import { Router } from '@angular/router';
 })
 export class StockSearchComponent {
   placeholder:String = "Search by Firm ID";
+  firmID:String;
+  showError:Boolean = false;
   constructor(private router:Router) { };
 
   navigateToDetails():void{
-      let link = ['/goToDetails'];
-      this.router.navigate(link);
+      let link = ['/goToDetails/'+this.firmID];
+      if(this.firmID && this.firmID.length){
+         this.showError = false;
+         this.router.navigate(link);
+      }else
+          this.showError = true;
   }
  
 }

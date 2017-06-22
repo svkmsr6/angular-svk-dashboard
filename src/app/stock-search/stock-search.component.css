@@ -34,3 +34,8 @@
 .centric-search{
     text-align: center;    
 }
+
+.search-error{
+    color:pink;
+    background-color: crimson;
+}

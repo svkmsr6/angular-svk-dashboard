@@ -1,10 +1,10 @@
 <div class="container">
-	<div class="row centric-search">
+    <div class="row centric-search">
         <div class="col-md-12">
-    		<h2>Search latest stocks</h2>
+            <h2>Search latest stocks</h2>
             <div id="custom-search-input">
                 <div class="input-group col-md-12">
-                    <input type="text" class="form-control input-lg" placeholder="{{placeholder}}" />
+                    <input type="text" [(ngModel)]="firmID" class="form-control input-lg" placeholder="{{placeholder}}" />
                     <span class="input-group-btn">
                         <button class="btn btn-info btn-lg" type="button" (click)="navigateToDetails()">
                             <i class="fa fa-search"></i>
@@ -12,6 +12,7 @@
                     </span>
                 </div>
             </div>
+            <span class="search-error" *ngIf="showError">*Empty field not allowed</span>
         </div>
-	</div>
+    </div>
 </div>

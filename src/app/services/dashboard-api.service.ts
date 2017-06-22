@@ -15,4 +15,10 @@ export class DashboardApiService {
                             .map((res:any)=>res.json())
                             .catch((error:any)=> {return error.message});
    }
+
+   public getStockDetail(firmID:String):Observable <any>{
+          return this.http.get('https://jsonplaceholder.typicode.com/users?username='+firmID)
+                            .map((res:any)=>res.json())
+                            .catch((error:any)=> {return error.message});
+   }
 }
