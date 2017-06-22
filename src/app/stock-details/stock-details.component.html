@@ -1,3 +1,22 @@
-<p>
-  {{stockDetail?.company.name}}
-</p>
+<div class="content centric-detail">
+  <div class="card" *ngIf = "!noResult">
+    <div class="firstinfo"><img src="http://placehold.it/150/92c952"/>
+      <p class="bio caption">{{stockDetail?.username}}</p>
+      <div class="profileinfo">
+        <h1>{{stockDetail?.company.name}}</h1>
+        <h3>"{{stockDetail?.company.bs}}"</h3>        
+        <p class="bio">{{stockDetail?.company.catchPhrase}}</p>
+        <h6>{{stockDetail?.email}}</h6>
+      </div>
+    </div>
+  </div>
+  <div class="badgescard" *ngIf = "noResult"> 
+    <span class="devicons devicons-django">No Companies found!</span>
+    <span class="devicons devicons-python"> </span>
+    <span class="devicons devicons-codepen"></span>
+    <span class="devicons devicons-javascript_badge"></span>
+    <span class="devicons devicons-gulp"></span>
+    <span class="devicons devicons-angular"></span>
+    <span class="devicons devicons-sass"> </span>
+  </div>
+</div>
