@@ -10,7 +10,8 @@ import 'rxjs/add/operator/switchMap';
 })
 export class StockDetailsComponent implements OnInit {
 
-  noResult:Boolean = true;
+  noResult:Boolean = true; 
+  noResultMessage:String = "Loading..";
   stockDetail: any = {};
 
   constructor(
@@ -19,8 +20,7 @@ export class StockDetailsComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    let firmID: String = this.route.snapshot.params["firmID"];
-    console.log(firmID);
+    let firmID: String = this.route.snapshot.params["firmID"];    
     this.dashboardApiInstance.getStockDetail(firmID)
       .subscribe(data => this.assignResult(Array.from(data)[0]));
   }
@@ -30,7 +30,8 @@ export class StockDetailsComponent implements OnInit {
       this.noResult = false;
       this.stockDetail = result;
     }
-      
+    else
+      this.noResultMessage = "No Results found";
   }
 
 }
