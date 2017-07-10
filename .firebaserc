@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "default": "svk-fb-demo",
+    "staging": "svk-fb-demo"
+  }
+}
