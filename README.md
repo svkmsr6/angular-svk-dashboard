@@ -21,4 +21,4 @@ the other to search for a particular firm out of those 10 using a Firm ID.
  More and more features are yet to be added
 
 ## DEMO Hosted at
- Hosting URL: https://svk-fb-demo.firebaseapp.com/searchStocks
+ Hosting URL: https://svk-fb-demo.firebaseapp.com
